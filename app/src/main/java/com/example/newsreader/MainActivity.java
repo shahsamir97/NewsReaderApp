@@ -50,8 +50,11 @@ public class MainActivity extends AppCompatActivity {
             if (newsHeadLines.isEmpty()) {
                 RetriveNewsData retriveNewsData = new RetriveNewsData(this);
                 try {
-                    String l = retriveNewsData
-                            .execute("").get();
+                    
+                    /*Get your API key from here https://newsapi.org/ 
+                    because all of this codes has been written acording to the thier API format
+                    */
+                   // String l = retriveNewsData.execute("Your api key here").get();
                 } catch (ExecutionException e) {
                     e.printStackTrace();
                     updateNews();
